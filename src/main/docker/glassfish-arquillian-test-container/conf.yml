@@ -1,0 +1,20 @@
+# additional data require to create the Docker image
+# packaging:
+  # files to add to the build, usually used with ADD in the Dockerfile
+#  add:
+#    - target/example-${project.version}.jar
+#    - hello-world.yml
+# optional list of port to expose on the host
+ports:
+  - 13080
+  - 13048
+# containers that this should be linked to, started before this one and stopped afterwards, optional alias after colon
+# links:
+#   - mysql:db
+healthChecks:
+  pings:
+    - url: http://localhost:13080
+      timeout: 60000
+# tag to use for images
+#tag: reap/app:${project.artifactId}-${project.version}
+tag: reap/app:arquillian-with-docker-test-1.0-SNAPSHOT
