@@ -7,7 +7,7 @@
     <container qualifier="glassfish-remote" default="true">
         <configuration>
             <property name="adminHost">localhost</property>
-            <property name="adminPort">6048</property>
+            <property name="adminPort">13048</property>
             <property name="adminUser">admin</property>
             <property name="adminPassword">admin</property>
             <property name="adminHttps">true</property>
